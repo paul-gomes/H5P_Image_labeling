@@ -1,0 +1,79 @@
+[
+  {
+    "label": "Image",
+    "importance": "high",
+    "name": "image",
+    "type": "image",
+    "description": "Image that would be used for labeling."
+  },
+
+  {
+    "name": "labelImageAltText",
+    "type": "text",
+    "label": "Alternative text for label image",
+    "description": "If the browser can't load the image this text will be displayed instead. Also used by assistive technologies.",
+    "optional": true
+  },
+
+  {
+    "name": "color",
+    "type": "text",
+    "label": "Hotspot color",
+    "importance": "medium",
+    "description": "The color of the hotspots and text",
+    "optional": true,
+    "default": "#981d99",
+    "widget": "colorSelector",
+    "spectrum": {
+      "showInput": true
+    }
+  },
+
+  {
+    "name": "hotspots",
+    "type": "list",
+    "entity": "hotspot",
+    "label": "Hotspots",
+    "importance": "high",
+    "min": 1,
+    "defaultNum": 1,
+
+    "field": {
+      "name": "hotspot",
+      "type": "group",
+      "label": "Hotspot",
+      "importance": "high",
+
+      "fields": [
+        {
+          "name": "position",
+          "type": "group",
+          "widget": "imageCoordinateSelector",
+          "imageFieldPath": "../../image",
+          "label": "Hotspot position",
+          "importance": "high",
+          "description": "Click on the thumbnail image to place the hotspot",
+          "fields": [
+            {
+              "name": "x",
+              "type": "number"
+            },
+            {
+              "name": "y",
+              "type": "number"
+            }
+          ]
+        },
+
+        {
+          "name": "answer",
+          "type": "text",
+          "label": "Answer",
+          "importance": "high",
+          "description": "Term/key that Corrsponds to the above image drop zone. NOTE: IF MORE THAN ONE WORD, PLEASE USE UNDERSCORE INSTEAD OF SPACE."
+        }
+
+      ]
+    }
+  }
+]

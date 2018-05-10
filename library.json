@@ -1,0 +1,85 @@
+{
+  "title": "Image Labeling",
+  "description": "Label the approriate term by drag and drop.",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 1,
+  "runnable": 1,
+  "author": "paul",
+  "machineName": "H5P.ImageLabeling",
+  "fullscreen": 1,
+
+  "embedTypes": [
+    "iframe"
+  ],
+
+  "preloadedJs": [
+    {
+      "path": "scripts/jquery-3.3.1.min.js"
+    },
+    {
+      "path": "scripts/jquery-ui.min.js"
+    },
+    {
+      "path": "scripts/jquery.ui.touch-punch.min.js"
+    },
+    {
+      "path": "scripts/image-labeling.js"
+    },
+    {
+      "path": "scripts/hotspot.js"
+    },
+    {
+      "path": "scripts/answer.js"
+    },
+    {
+      "path": "scripts/jAlert.js"
+    },
+    {
+      "path": "scripts/jAlert-functions.js"
+    }
+    
+
+  ],
+
+  "preloadedCss": [
+    {
+      "path": "styles/image-labeling.css"
+    },
+    {
+      "path": "styles/jAlert.css"
+    }
+  ],
+
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Transition",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "jQuery.ui",
+      "majorVersion": 1,
+      "minorVersion": 10,
+      "defaultStyles": true
+    }
+  ],
+
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.ImageCoordinateSelector",
+      "majorVersion": 1,
+      "minorVersion": 1
+    },
+    {
+      "machineName": "H5PEditor.ColorSelector",
+      "majorVersion": 1,
+      "minorVersion": 2
+    }
+  ]
+}
