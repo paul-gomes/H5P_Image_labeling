@@ -70,7 +70,7 @@
           "type": "text",
           "label": "Answer",
           "importance": "high",
-          "description": "Term/key that Corrsponds to the above image drop zone. NOTE: IF MORE THAN ONE WORD, PLEASE USE UNDERSCORE INSTEAD OF SPACE."
+          "description": "Term/key that Corrsponds to the above image drop zone."
         }
 
       ]
